@@ -104,20 +104,6 @@
     
 }
 
-- (instancetype)init {
-    if (self = [super init]) {
-        [self initWithTableViewDatas:nil];
-    }
-    return self;
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:CGRectZero]) {
-        [self initWithTableViewDatas:nil];
-    }
-    return self;
-}
-
 - (instancetype)initWithSourceDatas:(NSArray *)datas {
     if (self = [super init]) {
         [self initWithTableViewDatas:datas];
@@ -133,12 +119,12 @@
     
     [self triggerInitialize];
     
-    
     _indexItem = 0;
     _itemCount = 1;
-    _selectDatas = [NSMutableArray array];
-    _indexPaths = [NSMutableArray array];
+    
     _items = [NSMutableArray array];
+    _indexPaths = [NSMutableArray array];
+    _selectDatas = [NSMutableArray array];
     _sourceDatas = [NSMutableArray array];
     
     if (datas) {
