@@ -22,31 +22,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhk-j9-EAE">
-                                <rect key="frame" x="129.5" y="149" width="116" height="30"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="87.5" y="149" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="116" id="HHi-1l-mwe"/>
-                                    <constraint firstAttribute="height" constant="30" id="YQe-ii-OnP"/>
+                                    <constraint firstAttribute="width" constant="200" id="HHi-1l-mwe"/>
+                                    <constraint firstAttribute="height" constant="50" id="YQe-ii-OnP"/>
                                 </constraints>
-                                <state key="normal" title="show"/>
+                                <state key="normal" title="show PickerView">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPa-4Q-T7U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayz-6f-Fkq">
-                                <rect key="frame" x="133" y="256" width="109" height="30"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="87.5" y="276" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="109" id="0XK-Ts-hgJ"/>
-                                    <constraint firstAttribute="height" constant="30" id="NHY-fi-aer"/>
+                                    <constraint firstAttribute="width" constant="200" id="0XK-Ts-hgJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="NHY-fi-aer"/>
                                 </constraints>
-                                <state key="normal" title="update"/>
+                                <state key="normal" title="update data">
+                                    <color key="titleColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="update:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6lx-rI-OKj"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ayz-6f-Fkq" firstAttribute="top" secondItem="Lhk-j9-EAE" secondAttribute="bottom" constant="77" id="SRJ-ig-Tbz"/>
                             <constraint firstItem="Lhk-j9-EAE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="129" id="SYz-Sy-8gc"/>

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SJPickerViewConst.h"
 
 @interface SJIndexPath : NSObject
 @property (nonatomic, assign) NSInteger row;

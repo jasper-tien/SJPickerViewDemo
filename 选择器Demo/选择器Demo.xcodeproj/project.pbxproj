@@ -13,9 +13,10 @@
 		8E056F8E1F34260100ADAC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E056F8C1F34260100ADAC6B /* LaunchScreen.storyboard */; };
 		8E056F991F34260100ADAC6B /* ___DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E056F981F34260100ADAC6B /* ___DemoTests.m */; };
 		8E056FA41F34260100ADAC6B /* ___DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E056FA31F34260100ADAC6B /* ___DemoUITests.m */; };
-		8E056FB31F34261500ADAC6B /* SJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E056FB21F34261500ADAC6B /* SJPickerView.m */; };
 		8E056FB61F34265500ADAC6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E056FB51F34265500ADAC6B /* ViewController.m */; };
 		8E056FB81F34267000ADAC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E056FB71F34267000ADAC6B /* Main.storyboard */; };
+		8ED6CCE11F3AF8A700A07F9D /* SJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6CCDE1F3AF8A700A07F9D /* SJPickerView.m */; };
+		8ED6CCE21F3AF8A700A07F9D /* SJPickerViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6CCE01F3AF8A700A07F9D /* SJPickerViewConst.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +50,13 @@
 		8E056F9F1F34260100ADAC6B /* 选择器DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "选择器DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E056FA31F34260100ADAC6B /* ___DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___DemoUITests.m"; sourceTree = "<group>"; };
 		8E056FA51F34260100ADAC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E056FB11F34261500ADAC6B /* SJPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJPickerView.h; sourceTree = "<group>"; };
-		8E056FB21F34261500ADAC6B /* SJPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJPickerView.m; sourceTree = "<group>"; };
 		8E056FB41F34265500ADAC6B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8E056FB51F34265500ADAC6B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8E056FB71F34267000ADAC6B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8ED6CCDD1F3AF8A700A07F9D /* SJPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJPickerView.h; sourceTree = "<group>"; };
+		8ED6CCDE1F3AF8A700A07F9D /* SJPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJPickerView.m; sourceTree = "<group>"; };
+		8ED6CCDF1F3AF8A700A07F9D /* SJPickerViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJPickerViewConst.h; sourceTree = "<group>"; };
+		8ED6CCE01F3AF8A700A07F9D /* SJPickerViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJPickerViewConst.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +111,7 @@
 				8E056F821F34260100ADAC6B /* AppDelegate.m */,
 				8E056FB41F34265500ADAC6B /* ViewController.h */,
 				8E056FB51F34265500ADAC6B /* ViewController.m */,
-				8E056FB11F34261500ADAC6B /* SJPickerView.h */,
-				8E056FB21F34261500ADAC6B /* SJPickerView.m */,
+				8ED6CCDC1F3AF8A700A07F9D /* PickerView */,
 				8E056FB71F34267000ADAC6B /* Main.storyboard */,
 				8E056F8A1F34260100ADAC6B /* Assets.xcassets */,
 				8E056F8C1F34260100ADAC6B /* LaunchScreen.storyboard */,
@@ -143,6 +145,17 @@
 				8E056FA51F34260100ADAC6B /* Info.plist */,
 			);
 			path = "选择器DemoUITests";
+			sourceTree = "<group>";
+		};
+		8ED6CCDC1F3AF8A700A07F9D /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				8ED6CCDD1F3AF8A700A07F9D /* SJPickerView.h */,
+				8ED6CCDE1F3AF8A700A07F9D /* SJPickerView.m */,
+				8ED6CCDF1F3AF8A700A07F9D /* SJPickerViewConst.h */,
+				8ED6CCE01F3AF8A700A07F9D /* SJPickerViewConst.m */,
+			);
+			path = PickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +293,9 @@
 			files = (
 				8E056F831F34260100ADAC6B /* AppDelegate.m in Sources */,
 				8E056F801F34260100ADAC6B /* main.m in Sources */,
+				8ED6CCE11F3AF8A700A07F9D /* SJPickerView.m in Sources */,
 				8E056FB61F34265500ADAC6B /* ViewController.m in Sources */,
-				8E056FB31F34261500ADAC6B /* SJPickerView.m in Sources */,
+				8ED6CCE21F3AF8A700A07F9D /* SJPickerViewConst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +521,7 @@
 				8E056FAA1F34260100ADAC6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E056FAB1F34260100ADAC6B /* Build configuration list for PBXNativeTarget "选择器DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +530,7 @@
 				8E056FAD1F34260100ADAC6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E056FAE1F34260100ADAC6B /* Build configuration list for PBXNativeTarget "选择器DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +539,7 @@
 				8E056FB01F34260100ADAC6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
