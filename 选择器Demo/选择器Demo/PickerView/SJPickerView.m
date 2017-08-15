@@ -71,37 +71,47 @@
 - (void)dealloc {
     
 }
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        [self initDatas];
+    }
+    
+    return self;
+}
+
 - (instancetype)initWithSourceDatas:(NSArray *)datas {
-    if (self = [super init]) {
-        
-        self.backgroundColor = [UIColor clearColor];
-        UIView* screenView = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
-        self.frame = screenView.frame;
-        
-        [self triggerInitialize];
-        
-        
-        _indexItem = 0;
-        _itemCount = 1;
-        _isLastItem = NO;
-        _items = [NSMutableArray array];
-        _indexPaths = [NSMutableArray array];
-        _selectDatas = [NSMutableArray array];
-        _sourceDatas = [NSMutableArray array];
-        
+    if (self = [[[self class] alloc] init]) {
         if (datas) {
             [self reloadTableViewWithDatas:datas];
-        }
-        
-        UIButton *item = [self createButtonWithTitle:@"请选择" font:SJPickerViewFontRegular(14)];
-        if (item) {
-            [self.itemsSrcollView addSubview:item];
-            [_items addObject:item];
-            self.signView.frame = CGRectMake(ITEM_SPACING, ITEMS_SRCOLLVIEW_HIGHT - SIGN_VIEW_HIGHT, SIGN_VIEW_WIDTH, SIGN_VIEW_HIGHT);
         }
     }
     
     return self;
+}
+
+- (void)initDatas {
+    self.backgroundColor = [UIColor clearColor];
+    UIView* screenView = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
+    self.frame = screenView.frame;
+    
+    [self triggerInitialize];
+    
+    
+    _indexItem = 0;
+    _itemCount = 1;
+    _isLastItem = NO;
+    _items = [NSMutableArray array];
+    _indexPaths = [NSMutableArray array];
+    _selectDatas = [NSMutableArray array];
+    _sourceDatas = [NSMutableArray array];
+    
+    UIButton *item = [self createButtonWithTitle:@"请选择" font:SJPickerViewFontRegular(14)];
+    if (item) {
+        [self.itemsSrcollView addSubview:item];
+        [_items addObject:item];
+        self.signView.frame = CGRectMake(ITEM_SPACING, ITEMS_SRCOLLVIEW_HIGHT - SIGN_VIEW_HIGHT, SIGN_VIEW_WIDTH, SIGN_VIEW_HIGHT);
+    }
 }
 
 //触发view的get方法，初始化

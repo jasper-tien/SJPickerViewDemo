@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.datas = @[@"test1", @"test2", @"test3", @"test4"];
+    self.datas =  [self getRandomArray];
 }
 
 
@@ -29,15 +29,20 @@
 }
 
 - (NSArray *)sourceDatasOfRows {
+    self.datas = [self getRandomArray];
+    
+    return self.datas;
+}
+
+- (NSArray *)getRandomArray {
     NSMutableArray *array = [NSMutableArray array];
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 20; i++) {
         int x = arc4random() % 100;
         NSString *str = [NSString stringWithFormat:@"test %d", x];
         [array addObject:str];
     }
-    self.datas = array;
     
-    return self.datas;
+    return array;
 }
 
 - (void)pickerView:(SJPickerView *)view didSelectRowAtIndexPath:(SJIndexPath *)indexPath cellTitle:(NSString *)title {
